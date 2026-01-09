@@ -89,6 +89,7 @@ src
 └── main
     ├── java
     │   └── com.example.onlinelearning
+    │       ├── constants
     │       ├── controller
     │       ├── service
     │       ├── repository
@@ -97,9 +98,7 @@ src
     │       ├── config
     │       └── OnlineLearningApplication.java
     └── resources
-        ├── application.yml
-        ├── static
-        └── templates
+        └── yaml
 
 
 ---
