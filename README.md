@@ -1,10 +1,15 @@
 # Online Learning Platform
 
-An online learning platform built with **Spring Boot**, **React**, and **MySQL**, supporting courses, lessons, assignments, learning progress tracking, and AI-assisted learning.
+## 1. Purpose
+
+This project is an online learning platform designed to support online education.
+The system helps students learn through structured courses and provides instructors
+with tools to manage learning content.
+An AI assistant is integrated to support users and improve learning efficiency.
 
 ---
 
-## Tech Stack
+## 2. Technologies Used
 
 ### Backend
 - Java 17
@@ -18,142 +23,90 @@ An online learning platform built with **Spring Boot**, **React**, and **MySQL**
 - Axios
 - React Router
 
-### AI Service
-- Python (AI Assistant)
-- REST API / LLM integration
-
-### Tools
-- Maven
-- Git
-- Postman
+### AI Assistant
+- Python
+- REST API integration
 
 ---
 
-## Features
+## 3. How to Use the Web Application
 
-### User
-- Register / Login
+### 3.1 User Registration and Login
+- Users can register a new account or log in using an existing account.
+- Authentication is handled securely using JWT.
+
+### 3.2 Course Enrollment
+- Students can browse available courses.
+- Students can enroll in courses and access course content after enrollment.
+
+### 3.3 Learning Process
+- Courses are organized into modules, sections, and lessons.
+- Lessons can be video-based or text-based.
+- Students can track their learning progress for each lesson.
+
+### 3.4 Assignments
+- Students can view assignments associated with lessons.
+- Students can submit their assignments online.
+- Instructors can review submissions and provide feedback.
+
+### 3.5 Learning Progress Tracking
+- The system records learning progress for each lesson.
+- Students can monitor their completion status and progress percentage.
+
+### 3.6 AI Assistant
+- The AI assistant helps users understand how to use the application.
+- The AI provides guidance and explanations for exercises and assignments.
+- AI interactions are stored for future reference.
+
+---
+
+## 4. Main Features
+
+### Student
+- Register and login
 - Enroll in courses
-- Watch lessons
+- View lessons
 - Submit assignments
 - Track learning progress
+- Use AI assistant for learning support
 
 ### Instructor
 - Create and manage courses
-- Upload lessons and assignments
+- Organize modules, sections, and lessons
+- Create assignments
 - View student progress
 
-### AI Assistant
-- Support app usage
-- Help solve exercises
-- Guide students step-by-step
+### Administrator
+- Manage users
+- Manage system data
 
 ---
 
-## Database Design
+## 5. Notes
 
-Main entities:
-- User
-- Course
-- CourseModule
-- CourseSection
-- Lesson
-- Enrollment
-- Assignment
-- Submission
-- LearningProgress
-- AIInteraction
-
----
-
-## Project Structure
-
-backend/
-- controller
-- service
-- repository
-- entity
-- dto
-- security
-
-frontend/
-- components
-- pages
-- services
-- hooks
+- Database credentials are not stored in the repository.
+- This project is developed for educational purposes.
+src
+└── main
+├── java
+│ └── com.example.onlinelearning
+│ ├── controller // Handle HTTP requests
+│ ├── service // Business logic layer
+│ ├── repository // Data access layer
+│ ├── entity // Entity classes (User, Course, Lesson, ...)
+│ ├── dto // Data Transfer Objects
+│ ├── config // Configuration (Security, CORS, ...)
+│ └── OnlineLearningApplication.java
+│
+└── resources
+├── application.yml // Application configuration
+├── static // Static resources (CSS, JS, images)
+└── templates // Views (if using Thymeleaf)
 
 ---
 
-## Installation & Setup
+## 6. Notes
+- This project is for educational purposes only
+- Sensitive information (database credentials, secret keys) is not included in this repository
+- The system can be extended with more features in the future
 
-### 1. Clone repository
-```bash
-git clone https://github.com/your-repo/online-learning.git
-```
-
-### 2. Create database
-```sql
-CREATE DATABASE online_learning;
-```
-
-### 3. Configure application.yml
-```yaml
-spring:
-  datasource:
-    url: jdbc:mysql://localhost:3306/online_learning
-    username: root
-    password: your_password
-```
-
-### 4. Run backend
-```bash
-mvn spring-boot:run
-```
-
-### 5. Run frontend
-```bash
-npm install
-npm start
-```
-
----
-
-## API Documentation
-
-- Auth API: /api/auth
-- Course API: /api/courses
-- Lesson API: /api/lessons
-- AI API: /api/ai
-
-Swagger UI:
-http://localhost:8080/swagger-ui.html
-
----
-
-## Security
-
-- JWT-based authentication
-- Role-based authorization (STUDENT, INSTRUCTOR, ADMIN)
-
----
-
-## AI Integration
-
-The AI assistant is implemented as a separate Python service.
-The backend communicates with the AI service via REST API.
-
----
-
-## Future Improvements
-
-- Video streaming optimization
-- Recommendation system
-- Certificate generation
-- Mobile application
-
----
-
-## Author
-
-- Nguyen Minh
-- Educational project
