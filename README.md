@@ -84,22 +84,22 @@ An AI assistant is integrated to support users and improve learning efficiency.
 
 ## 5. Project Structure
 
+```text
 src
 └── main
     ├── java
     │   └── com.example.onlinelearning
-    │       ├── controller        // Handle HTTP requests
-    │       ├── service           // Business logic layer
-    │       ├── repository        // Data access layer
-    │       ├── entity            // Entity classes (User, Course, Lesson, ...)
-    │       ├── dto               // Data Transfer Objects
-    │       ├── config            // Configuration (Security, CORS, ...)
+    │       ├── controller
+    │       ├── service
+    │       ├── repository
+    │       ├── entity
+    │       ├── dto
+    │       ├── config
     │       └── OnlineLearningApplication.java
-    │
     └── resources
-        ├── application.yml       // Application configuration
-        ├── static                // Static resources (CSS, JS, images)
-        └── templates             // Views (if using Thymeleaf)
+        ├── application.yml
+        ├── static
+        └── templates
 
 
 ---
