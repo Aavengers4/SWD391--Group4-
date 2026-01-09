@@ -12,7 +12,7 @@ An AI assistant is integrated to support users and improve learning efficiency.
 ## 2. Technologies Used
 
 ### Backend
-- Java 17
+- Java 21
 - Spring Boot
 - Spring Data JPA
 - Spring Security (JWT)
@@ -88,20 +88,21 @@ An AI assistant is integrated to support users and improve learning efficiency.
 - This project is developed for educational purposes.
 src
 └── main
-├── java
-│ └── com.example.onlinelearning
-│ ├── controller // Handle HTTP requests
-│ ├── service // Business logic layer
-│ ├── repository // Data access layer
-│ ├── entity // Entity classes (User, Course, Lesson, ...)
-│ ├── dto // Data Transfer Objects
-│ ├── config // Configuration (Security, CORS, ...)
-│ └── OnlineLearningApplication.java
-│
-└── resources
-├── application.yml // Application configuration
-├── static // Static resources (CSS, JS, images)
-└── templates // Views (if using Thymeleaf)
+    ├── java
+    │   └── com.example.onlinelearning
+    │       ├── controller        // Handle HTTP requests
+    │       ├── service           // Business logic layer
+    │       ├── repository        // Data access layer
+    │       ├── entity            // Entity classes (User, Course, Lesson, ...)
+    │       ├── dto               // Data Transfer Objects
+    │       ├── config            // Configuration (Security, CORS, ...)
+    │       └── OnlineLearningApplication.java
+    │
+    └── resources
+        ├── application.yml       // Application configuration
+        ├── static                // Static resources (CSS, JS, images)
+        └── templates             // Views (if using Thymeleaf)
+
 
 ---
 
