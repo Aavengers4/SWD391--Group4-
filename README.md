@@ -82,10 +82,8 @@ An AI assistant is integrated to support users and improve learning efficiency.
 
 ---
 
-## 5. Notes
+## 5. Project Structure
 
-- Database credentials are not stored in the repository.
-- This project is developed for educational purposes.
 src
 └── main
     ├── java
